@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="11dp"
+        android:text="WELCOME GSTORE"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/txt6"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/gmbr1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        android:layout_below="@+id/txt6"
+        android:id="@+id/gmbr4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/gmbr4"
+        android:layout_marginHorizontal="40dp"
+        android:id="@+id/ly2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:id="@+id/email2"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:id="@+id/password2"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_below="@+id/ly2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn4"
+        android:width="250dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btn4"
+        android:gravity="center"
+        android:id="@+id/ly3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Have An Account?"
+            android:textSize="12dp"
+            android:id="@+id/txt7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="#03A9F4"
+            android:id="@+id/txt8"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

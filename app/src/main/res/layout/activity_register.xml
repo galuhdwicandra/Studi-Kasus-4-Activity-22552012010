@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Register"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="100dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/txt2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt3"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="130dp"
+        android:text="Please Fill In Completely"
+        android:textAlignment="center"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt3"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:id="@+id/ly1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Fullname"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:id="@+id/fullname"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Email"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:id="@+id/Email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:hint="CreatePassword"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:id="@+id/createpassword"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Confirm Password"
+            android:backgroundTint="@color/white"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:id="@+id/confpassword"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:layout_below="@id/ly1"
+        android:layout_centerHorizontal="true"
+        android:width="250dp"
+        android:backgroundTint="#03A9F4"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/btn3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btn3"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alredy Have An Account?"
+            android:textSize="12dp"
+            android:id="@+id/txt4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#03A9F4"
+            android:textSize="12dp"
+            android:id="@+id/txt5"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

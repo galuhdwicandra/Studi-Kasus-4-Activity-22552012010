@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome To Gstore"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/gmbr1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:layout_below="@+id/txt1"
+        android:id="@+id/gmbr1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gmbr1"
+        android:layout_centerHorizontal="true"
+        android:width="250dp"
+        android:text="LOGIN"
+        android:backgroundTint="#03A9F4"
+        android:textSize="14dp"
+        android:id="@+id/btn1"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:id="@+id/btn2"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#03A9F4"
+        android:text="REGISTER"
+        android:width="250dp"
+        android:textSize="14dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        tools:ignore="ExtraText" />
+
+</RelativeLayout>
